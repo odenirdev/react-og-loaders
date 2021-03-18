@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-og-loaders'
-import 'react-og-loaders/dist/index.css'
+import { Spinner } from 'react-og-loaders'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Spinner color='red' size={30} />
 }
 
 export default App

@@ -13,16 +13,15 @@ npm install --save react-og-loaders
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'react-og-loaders'
-import 'react-og-loaders/dist/index.css'
+import { Spinner } from 'react-og-loaders'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return <Spinner color='red' size={30} />
 }
+
+export default App
 ```
 
 ## License
