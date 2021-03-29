@@ -19,7 +19,8 @@ export default styled.div.attrs({
   className: 'react-og-spinner'
 })`
   border: ${(props: Props) => props.borderSize || 8}px solid rgba(0, 0, 0, 0.1);
-  border-left: 8px solid ${(props: Props) => props.color || 'black'};
+  border-left: ${(props: Props) => props.borderSize || 8}px solid
+    ${(props: Props) => props.color || 'black'};
   height: ${(props: Props) => props.size || '60'}px;
   width: ${(props: Props) => props.size || '60'}px;
   border-radius: 50px;
